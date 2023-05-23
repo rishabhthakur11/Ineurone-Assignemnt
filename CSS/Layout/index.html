@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      height: 100vh;
+      background-color: lightblue;
+      padding: 10px;
+    }
+    .header {
+      height: 20vh;
+      background-color: seagreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header h1 {
+      text-align: center;
+      color: white;
+    }
+    .container2 {
+      display: flex;
+      margin-top: 35px;
+      gap: 35px;
+    }
+    .sidebar {
+      height: 70vh;
+      width: 30vw;
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sidebar h1 {
+      text-align: center;
+      color: white;
+    }
+    .rightside {
+      height: 70vh;
+      width: 70vw;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding: 10px;
+    }
+    .rightside h1 {
+      text-align: center;
+      color: white;
+    }
+    .rectangle-Container {
+      z-index: 50;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 3rem;
+    }
+    .rectangle-image {
+      background-color: rgb(255, 208, 121);
+      height: 280px;
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rectangle-image h1 {
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Header Div -->
+      <div class="header">
+        <h1>HEADER</h1>
+      </div>
+      <!-- Body Div -->
+      <div class="container2">
+        <!-- Left sideBar -->
+        <div class="sidebar">
+          <h1>Aside</h1>
+        </div>
+        <!-- Right side -->
+        <div class="rightside">
+          <div class="rectangle-Container">
+            <div class="rectangle-image">
+              <h1>Image</h1>
+            </div>
+            <div class="rectangle-image">
+              <h1>Image</h1>
+            </div>
+            <div class="rectangle-image">
+              <h1>Image</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
